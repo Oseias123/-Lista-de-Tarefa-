@@ -1,32 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>Minhas Tarefas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <h1>Tarefas</h1>
-    <ul>
-        <li>Estudar HTML</li>
-        <li>Estudar CSS</li>
-        <li>Estudar JS</Li>
-      </ul>
-    <input>
-    <button onclick="add()">adicionar</button>
-    <script>
-     function add(){
-     const ul = document.querySelector ("ul")
-     const input = document.querySelector ("input")
-     const tarefa = input.value
-     
-     const li = document.createElement("li")
-     li.innerText = tarefa 
-     ul.appendChild(li)  
-
-     input.value = ""
-    }
-
-     </script>
+    <div>
+        <input type="text">
+        <button onclick="adicionar()">adicionar</button>
+        <button onclick="apagar()">reset</button>
+    </div> 
+    <ol></ol>      
+  
+    <script src="script.js"></script>
 </body>
 </html>
